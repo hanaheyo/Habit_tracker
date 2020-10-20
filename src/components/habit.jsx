@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 
 class Habit extends Component {
     // 멤버변수 설정 - render에서 반복 발생되는 것 방지
-    callHandleIncrement = () => {
+    handleIncrement = () => {
         this.props.onIncrement(this.props.habit);
     }
 
-    callHandleDecrement = () => {
+    handleDecrement = () => {
         this.props.onDecrement(this.props.habit);
     }
 
-    callHandleDelete = () => {
+    handleDelete = () => {
         this.props.onDelete(this.props.habit);
     }
 
@@ -20,13 +20,13 @@ class Habit extends Component {
             <li className="habit">
                 <span className="habit-name">{name}</span>
                 <span className="habit-count">{count}</span>
-                <button className="habit-button habit-increase" onClick={this.callHandleIncrement}>
+                <button className="habit-button habit-increase" onClick={this.handleIncrement}>
                 <i className="fas fa-plus-square"></i>
                 </button>
-                <button className="habit-button habit-decrease" onClick={this.callHandleDecrement}>
+                <button className="habit-button habit-decrease" onClick={this.handleDecrement}>
                 <i className="fas fa-minus-square"></i>
                 </button>
-                <button className="habit-button habit-delete" onClick={this.callHandleDelete}
+                <button className="habit-button habit-delete" onClick={this.handleDelete}
                 >
                 <i className="fas fa-trash"></i>
                 </button>
