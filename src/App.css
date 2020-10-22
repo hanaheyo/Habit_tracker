@@ -25,11 +25,27 @@ button {
   font-size: 2rem;
   width: 2.5rem;
   height: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 2.3rem;
   margin-left: 0.2rem;
   background-color: green;
   color: white;
   border-radius: 50%;
+}
+
+.add-input {
+  font-size: 2rem;
+}
+
+.add-input {
+  margin-right: 0.2rem;
+}
+
+.add-button {
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: green;
+  color: white;
 }
 
 .habit {
