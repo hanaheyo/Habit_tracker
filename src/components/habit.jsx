@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Habit extends Component {
+class Habit extends PureComponent {
     // 멤버변수 설정 - render에서 반복 발생되는 것 방지
     handleIncrement = () => {
         this.props.onIncrement(this.props.habit);
@@ -15,8 +15,8 @@ class Habit extends Component {
     }
 
     render() {
-        console.log('habit');
         const { name, count } = this.props.habit;
+        console.log(`habit: ${name}`);
         return (
             <li className="habit">
                 <span className="habit-name">{name}</span>
