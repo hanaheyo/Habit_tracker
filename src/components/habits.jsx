@@ -8,6 +8,7 @@ handleAdd = name => {
 };
 
     render() {
+        console.log('habits');
         return (
             <>
                 <HabitAddForm onAdd={this.handleAdd} />

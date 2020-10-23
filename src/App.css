@@ -34,10 +34,7 @@ button {
 
 .add-input {
   font-size: 2rem;
-}
-
-.add-input {
-  margin-right: 0.2rem;
+  margin: 2rem 0.2rem;
 }
 
 .add-button {
